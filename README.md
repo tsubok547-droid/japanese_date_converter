@@ -18,7 +18,7 @@ You need to add `intl` to your dependencies in `pubspec.yaml`.
 
 ```yaml
 dependencies:
-  intl: ^0.19.0
+  intl: ^0.20.0
 ```
 
 ## Usage

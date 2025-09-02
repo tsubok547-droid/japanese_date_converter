@@ -1,6 +1,6 @@
 name: japanese_date_converter
 description: A Flutter package to convert DateTime objects to Japanese era (Wareki) date strings, supporting eras from Meiji onwards.
-version: 1.0.1
+version: 1.0.2
 homepage: https://github.com/tsubok547-droid/japanese_date_converter
 repository: https://github.com/tsubok547-droid/japanese_date_converter.git
 
@@ -11,7 +11,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  intl: ^0.19.0
+  intl: ^0.20.0
 
 dev_dependencies:
   flutter_test:
