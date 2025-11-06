@@ -24,6 +24,8 @@ final List<_Era> _eras = [
   _Era(name: '安政', startDate: DateTime(1855, 1, 15)),
 ];
 
+/// Extends the [DateTime] class to provide Japanese date formatting.
+/// (DateTimeクラスを拡張し、和暦フォーマット機能を提供します)
 extension JapaneseDateConverter on DateTime {
   /// Returns the Japanese era string (e.g., "令和元年9月2日(火)").
   /// 和暦の文字列（例：令和元年9月2日(火)）を返します。
@@ -36,7 +38,8 @@ extension JapaneseDateConverter on DateTime {
 
       final isBeforeNextEra = (i == 0) || date.isBefore(_eras[i - 1].startDate);
 
-      if (date.isAfter(currentEra.startDate) || date.isAtSameMomentAs(currentEra.startDate)) {
+      if (date.isAfter(currentEra.startDate) ||
+          date.isAtSameMomentAs(currentEra.startDate)) {
         if (isBeforeNextEra) {
           final eraYear = date.year - currentEra.startDate.year + 1;
           final yearString = eraYear == 1 ? '元' : eraYear.toString();

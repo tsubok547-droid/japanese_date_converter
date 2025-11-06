@@ -1,9 +1,6 @@
 ## 1.0.2
 
-### 修正 (Fixes)
-
-- **依存関係の解決:**
-  - `intl`パッケージへの依存バージョンを`^0.20.0`に引き上げました。これにより、最新のFlutterプロジェクトで発生していた依存関係の競合が解消されます。
+* **Fix:** Raised `intl` dependency to `^0.20.0` to resolve compatibility issues with recent Flutter projects.
 
 ## 1.0.1
 
